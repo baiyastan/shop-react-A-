@@ -2,6 +2,9 @@ import React from 'react'
 import "./Header.css"
 import { Link } from 'react-router-dom'
 import search from "../../assets/svg/search.svg"
+import heart from "../../assets/svg/heart.svg"
+import cart from "../../assets/svg/cart.svg"
+
 
 function Header() {
   return (
@@ -31,7 +34,14 @@ function Header() {
                     <input type='text' placeholder=''/>
                     <img src={search} alt='search'/>
                 </div>
-                <div className='nav-bar-icon'></div>
+                <div className='nav-bar-icon'>
+                    <Link to="/wishlist">
+                        <img src={heart} alt='heart'/>
+                    </Link>
+                    <Link to="/cart">
+                        <img src={cart} alt='cart'/>
+                    </Link>
+                </div>
             </div>
         </nav>
     </header>

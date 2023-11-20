@@ -69,3 +69,10 @@
     outline: none;
     background-color: transparent;
 }
+
+.nav-bar-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
